@@ -1,0 +1,12 @@
+.demo-title {
+  font-size: 28px;
+  color: white !important;
+}
+
+.demo-description {
+  align-self: center;
+  font-family: "Light";
+  font-size: 17px;
+  max-width: 850px;
+  color: white !important;
+}

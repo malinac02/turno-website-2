@@ -1,0 +1,58 @@
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 3em;
+  transition: color 1s ease;
+  transition: background-color 0.2s ease;
+}
+
+.die-icon {
+  color: inherit;
+}
+
+.white-text-navbar {
+  color: white;
+  /* background-color: black; */
+  background-color: #4C5994;
+}
+
+.black-text-navbar {
+  color: black;
+  background-color: white;
+}
+
+.salmon-navbar {
+  color: white;
+  background-color: #FF7474;
+}
+  
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-left: 10px;
+  width: 7%;
+}
+
+.navbar-logo {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.navbar-li {
+  display: inline-block;
+  padding: 0 1.25rem;
+}
+
+.navbar-text:hover, .navbar-logo:hover {
+  color: #faa6a6;
+  cursor: pointer;
+}
