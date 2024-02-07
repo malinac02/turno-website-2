@@ -6,15 +6,26 @@ function About() {
       <div className="about-top">
         <h2 className="about-title">About</h2>
         <p className="about-description">
-          <span className="about-description-bold"><i>Turno</i></span> is a mobile app developed by a group 
-          of passionate Stanford students. <span className="about-description-bold"><i>Turno</i></span> allows 
-          users to input activities they want to achieve, such as new things they want to try, habits they want
-          to build, and tasks to accomplish. Users roll a dice every day to determine which of those tasks they 
-          should tackle that day, allowing them to <span className="about-description-bold">overcome decision 
-          paralysis</span> and <span className="about-description-bold">achieve their activity goals</span>.
+          <span className="about-description-bold">turno</span> is a mobile app
+          developed by a group of passionate Stanford students.
+        </p>
+        <p className="about-description">
+          <span className="about-description-bold">turno</span> simplifies
+          choice-making with a digital dice, where each side maps to user-input
+          options. It is a
+          <span className="about-description-bold">
+            {" "}
+            streamlined activity prompter{" "}
+          </span>
+          that
+          <span className="about-description-bold">
+            {" "}
+            transforms the chore of choosing{" "}
+          </span>
+          into a fun and quick activity, freeing up time and mental energy.
         </p>
       </div>
-      <h5 className="about-subtitle">Our Concept Video</h5>
+      <h5 className="about-subtitle">Our Concept</h5>
       <div className="about-video-container">
         <iframe
           width="550"

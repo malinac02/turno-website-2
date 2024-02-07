@@ -21,6 +21,7 @@
 .home-title-dice {
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 
 @keyframes moveAndSpin {
