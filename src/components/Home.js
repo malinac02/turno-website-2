@@ -1,15 +1,10 @@
 import "./Home.css";
 import CasinoIcon from "@mui/icons-material/Casino";
-import TurnoHomeScreen from "../TurnoHomeScreen.png";
-import TurnoHomeScreen2 from "../TurnoHomeScreen2.png";
 import Turno3Screens from "../images/Turno3Screens.png";
 import { Link } from "react-scroll";
 import { FaArrowDown, FaArrowRight } from "react-icons/fa6";
-import { useState, useRef } from "react";
 
 function Home() {
-  const [hovered1, setHovered1] = useState(false);
-
   return (
     <div className="home-container">
       <div className="home-content">
@@ -27,8 +22,6 @@ function Home() {
               smooth={true}
               offset={0}
               duration={500}
-              onMouseEnter={() => setHovered1(true)}
-              onMouseLeave={() => setHovered1(false)}
             >
               Get the app
               {/* <FaArrowDown className="home-button-icon" /> */}

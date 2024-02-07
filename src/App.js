@@ -3,8 +3,10 @@ import Navbar from "./components/Navbar.js";
 import Home from "./components/Home.js";
 import About from "./components/About.js";
 import DesignProcess from "./components/DesignProcess.js";
+import DesignProcess2 from "./components/DesignProcess2.js";
 import Demo from "./components/Demo.js";
 import Team from "./components/Team.js";
+import Team2 from "./components/Team2.js";
 import "./fonts/Poppins-Bold.woff";
 import "./fonts/Poppins-Medium.woff";
 import "./fonts/Poppins-Light.woff";
@@ -21,10 +23,12 @@ function App() {
       const aboutOffset = document.getElementById("about").offsetTop - 45;
       const designProcessOffset =
         document.getElementById("design-process").offsetTop - 45;
+      const designProcess2Offset =
+        document.getElementById("design-process-2").offsetTop - 45;
       const demoOffset = document.getElementById("demo").offsetTop - 45;
       const teamOffset = document.getElementById("team").offsetTop - 45;
 
-      const homeMidpoint = document.getElementById("home").offsetTop + 120;
+      const homeMidpoint = document.getElementById("home").offsetTop + 50;
 
       if (scrollPosition < homeMidpoint) {
         setCurrentSection("home-top");
@@ -32,8 +36,10 @@ function App() {
         setCurrentSection("home");
       } else if (scrollPosition < designProcessOffset) {
         setCurrentSection("about");
-      } else if (scrollPosition < demoOffset) {
+      } else if (scrollPosition < designProcess2Offset) {
         setCurrentSection("design-process");
+      } else if (scrollPosition < demoOffset) {
+        setCurrentSection("design-process-2");
       } else if (scrollPosition < teamOffset) {
         setCurrentSection("demo");
       } else {
@@ -64,11 +70,15 @@ function App() {
         <article id="design-process" className="section design-process">
           <DesignProcess />
         </article>
+        <article id="design-process-2" className="section design-process-2">
+          <DesignProcess2 />
+        </article>
         <article id="demo" className="section demo">
           <Demo />
         </article>
         <article id="team" className="section">
-          <Team />
+          {/* <Team /> */}
+          <Team2 />
         </article>
         <footer className="footer">
           <p className="footer-text">&copy; 2024 Turno. All rights reserved.</p>

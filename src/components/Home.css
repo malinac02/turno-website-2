@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   margin: 3rem;
 }
 
@@ -16,12 +17,13 @@
 .home-text {
   /* flex: 1; */
   text-align: left;
+  min-width: 400px;
 }
 
 .home-title-dice {
   display: flex;
   align-items: center;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 @keyframes moveAndSpin {

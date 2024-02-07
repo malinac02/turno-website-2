@@ -8,13 +8,15 @@ function Navbar({ currentSection }) {
 
   if (currentSection === "home-top") {
     navbarClass += " home-navbar";
-    logoClass += " hidden-logo"
-  }
-  else if (currentSection === "home") {
+    logoClass += " hidden-logo";
+  } else if (currentSection === "home") {
     navbarClass += " white-text-navbar";
-    logoClass += " hidden-logo"
-  }
-  else if (currentSection === "design-process" || currentSection === "team") {
+    logoClass += " hidden-logo";
+  } else if (
+    currentSection === "design-process" ||
+    currentSection === "design-process-2" ||
+    currentSection === "team"
+  ) {
     navbarClass += " white-text-navbar";
   } else if (currentSection === "demo") {
     navbarClass += " salmon-navbar";
