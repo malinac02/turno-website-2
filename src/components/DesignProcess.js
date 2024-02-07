@@ -23,7 +23,7 @@ import A10reportpdf from "../pdfs/TurnoA10Report.pdf"
 import A9HEpdf from "../pdfs/TurnoHE.pdf";
 import A9HEdocx from "../pdfs/TurnoHE.docx";
 import ConceptVideo from "../videos/TurnoConceptVideo.mp4";
-import TurnoDemo from "../videos/TurnoDemo.mp4";
+import TurnoDemo from "../videos/TurnoConceptVideo.mp4";
 
 
 function DesignProcess() {

@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
+  position: fixed; /* or try sticky? */
   left: 0;
   top: 0;
   width: 100%;
@@ -15,10 +15,20 @@
   color: inherit;
 }
 
+.home-navbar {
+  color: white;
+}
+
+.hidden-logo {
+  visibility: hidden !important;
+}
+
 .white-text-navbar {
   color: white;
-  /* background-color: black; */
-  background-color: #4C5994;
+  /* background-color: rgba(0, 0, 0, 0.513); */
+  background-color: #000000;
+  
+  /* background: url("../images/DicePic3.png") center top/cover no-repeat; */
 }
 
 .black-text-navbar {
@@ -28,9 +38,9 @@
 
 .salmon-navbar {
   color: white;
-  background-color: #FF7474;
+  background-color: #ff7474;
 }
-  
+
 .navbar-left {
   display: flex;
   align-items: center;
@@ -52,7 +62,8 @@
   padding: 0 1.25rem;
 }
 
-.navbar-text:hover, .navbar-logo:hover {
+.navbar-text:hover,
+.navbar-logo:hover {
   color: #faa6a6;
   cursor: pointer;
 }

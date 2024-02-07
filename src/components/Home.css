@@ -1,79 +1,144 @@
 .home-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 3rem;
-    margin-left: 2rem;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem;
 }
 
-.white-navbar {
-    background-color: black;
-}
-
-.pink-navbar {
-    background-color: green;
-}
-  
 .home-content {
-    display: flex;
-    align-items: center;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between !important;
 }
 
 .home-text {
-    flex: 1;
-    padding: 20px;
-    text-align: left;
+  /* flex: 1; */
+  text-align: left;
 }
 
 .home-title-dice {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 @keyframes moveAndSpin {
-    0%, 100% {
-      transform: translateX(0) rotate(0deg);
-    }
-    50% {
-      transform: translateX(150px) rotate(360deg);
-    }
+  0%,
+  100% {
+    transform: translateX(0) rotate(0deg);
   }
-  
-  @media (prefers-reduced-motion: no-preference) {
-    .home-dice {
-      animation: moveAndSpin 8s linear infinite;
-      color: #ff7474;
-      font-size: 75px;
-      margin-bottom: 13px;
-    }
+  50% {
+    transform: translateX(100px) rotate(360deg);
   }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .home-dice {
+    animation: moveAndSpin 8s linear infinite;
+    color: #ff7474;
+    font-size: 75px;
+    margin-bottom: 13px;
+  }
+}
 
 .home-title {
-    font-size: 5rem;
-    margin-top: 10px;
-    color: #ff7474;
-    font-family: "Bold";
+  font-size: 5rem;
+  margin-top: 10px;
+  color: #ff7474;
+  font-family: "Bold";
 }
 
 .home-subtitle {
-    color: white;
-    font-size: 1.5rem;
-    margin-bottom: 20px;
+  color: white;
+  font-size: 1.5rem;
+  margin-top: -10px;
+  /* margin-bottom: 20px; */
 }
 
 .home-subtitle2 {
-    color: white;
-    font-size: 1rem;
-    font-family: "Light";
+  color: white;
+  font-size: 1rem;
+  font-family: "Light";
+}
+
+.home-button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.home-button-primary {
+  height: 30px;
+  width: 120px;
+
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-button-primary:hover {
+  cursor: pointer;
+  background-color: #ff7474;
+  color: white;
+  transition: all 0.2s linear 0s;
+}
+
+.home-button-primary:hover .home-button-icon {
+  display: flex;
+  transition: all 0.2s linear 0s;
+  opacity: 1;
+}
+
+.home-button-secondary {
+  height: 30px;
+  width: 120px;
+
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-button-secondary:hover {
+  cursor: pointer;
+  background-color: #ff7474;
+  transition: all 0.2s linear 0s;
+}
+
+.home-button-secondary:hover .home-button-icon {
+  display: flex;
+  transition: all 0.2s linear 0s;
+  opacity: 1;
+}
+
+.home-button-icon {
+  display: none;
+  opacity: 0; /* Start with opacity 0 */
+  transition: opacity 0.2s linear; /* Apply transition to opacity */
 }
 
 .iphone-image-container {
-    flex: 1;
-    padding: 20px;
-    margin-left: -20px;
+  /* flex: 1;
+  padding: 20px; */
 }
 
 .iphone-image {
-    height: 60vh;
-    object-fit: cover;
+  height: 80vh;
+  object-fit: cover;
+  margin-top: 100px;
 }

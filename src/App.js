@@ -19,11 +19,16 @@ function App() {
       const scrollPosition = window.scrollY;
 
       const aboutOffset = document.getElementById("about").offsetTop - 45;
-      const designProcessOffset = document.getElementById("design-process").offsetTop - 45;
+      const designProcessOffset =
+        document.getElementById("design-process").offsetTop - 45;
       const demoOffset = document.getElementById("demo").offsetTop - 45;
       const teamOffset = document.getElementById("team").offsetTop - 45;
 
-      if (scrollPosition < aboutOffset) {
+      const homeMidpoint = document.getElementById("home").offsetTop + 120;
+
+      if (scrollPosition < homeMidpoint) {
+        setCurrentSection("home-top");
+      } else if (scrollPosition < aboutOffset) {
         setCurrentSection("home");
       } else if (scrollPosition < designProcessOffset) {
         setCurrentSection("about");
@@ -44,14 +49,16 @@ function App() {
 
   return (
     <div className="App">
+      {/* <div className="container"> */}
+
       <header>
         <Navbar currentSection={currentSection} />
       </header>
-      <main className="is-preload">
+      <main className="body">
         <article id="home" className="section home">
           <Home />
         </article>
-        <article id="about" className="section">
+        <article id="about" className="section about">
           <About />
         </article>
         <article id="design-process" className="section design-process">
@@ -64,9 +71,10 @@ function App() {
           <Team />
         </article>
         <footer className="footer">
-          <p className="footer-text">&copy; 2023 Turno. All rights reserved.</p>
+          <p className="footer-text">&copy; 2024 Turno. All rights reserved.</p>
         </footer>
       </main>
+      {/* </div> */}
     </div>
   );
 }

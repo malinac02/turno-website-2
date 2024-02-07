@@ -1,30 +1,57 @@
-import './Home.css';
-import CasinoIcon from '@mui/icons-material/Casino';
-import TurnoHomeScreen from "../TurnoHomeScreen.png"
-import TurnoHomeScreen2 from "../TurnoHomeScreen2.png"
-
+import "./Home.css";
+import CasinoIcon from "@mui/icons-material/Casino";
+import TurnoHomeScreen from "../TurnoHomeScreen.png";
+import TurnoHomeScreen2 from "../TurnoHomeScreen2.png";
+import Turno3Screens from "../images/Turno3Screens.png";
+import { Link } from "react-scroll";
+import { FaArrowDown, FaArrowRight } from "react-icons/fa6";
+import { useState, useRef } from "react";
 
 function Home() {
+  const [hovered1, setHovered1] = useState(false);
+
   return (
     <div className="home-container">
       <div className="home-content">
         <div className="home-text">
           <div className="home-title-dice">
             <h1 className="home-title">turno</h1>
-            <CasinoIcon className="home-dice" fontSize="default"/>
+            <CasinoIcon className="home-dice" fontSize="default" />
           </div>
-          <h4 className="home-subtitle">
-            Make every chore feel like a <b>turn</b>, not a <b>toil</b>.
-          </h4>
-          <p className="home-subtitle2">
-            From the Portuguese word for shift, or round, and the idea of it being your turn. 
-            <b><i> Turno. </i></b> 
-            Your turn to roll the die and take agency of 
-            your life. 
-          </p>
+          <h4 className="home-subtitle">Roll your way through the day</h4>
+          <div className="home-button-container">
+            <Link
+              className="home-button-primary"
+              // to="about"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              onMouseEnter={() => setHovered1(true)}
+              onMouseLeave={() => setHovered1(false)}
+            >
+              Get the app
+              {/* <FaArrowDown className="home-button-icon" /> */}
+            </Link>
+            <Link
+              className="home-button-secondary"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              Learn more
+              {/* <FaArrowRight className="home-button-icon" /> */}
+            </Link>
+          </div>
         </div>
         <div className="iphone-image-container">
-          <img src={TurnoHomeScreen2} alt="Turno Home Screen" className="iphone-image" />
+          <img
+            src={Turno3Screens}
+            alt="Turno Home Screen"
+            className="iphone-image"
+          />
         </div>
       </div>
     </div>

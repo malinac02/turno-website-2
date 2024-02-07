@@ -1,12 +1,18 @@
 .App {
   text-align: center;
   font-family: "Medium";
+  /* height: 100vh; */
+  width: 100vw;
+
+  background: url("images/DicePic3.png") center center/cover no-repeat;
+  /* background-size: "cover";
+  background-clip: fixed; */
+  background-attachment: fixed;
 }
 
 @font-face {
   font-family: "Bold";
-  src: local("Poppins-Bold"),
-    url("./fonts/Poppins-Bold.woff") format("woff");
+  src: local("Poppins-Bold"), url("./fonts/Poppins-Bold.woff") format("woff");
 }
 
 @font-face {
@@ -17,8 +23,11 @@
 
 @font-face {
   font-family: "Light";
-  src: local("Poppins-Light"),
-    url("./fonts/Poppins-Light.woff") format("woff");
+  src: local("Poppins-Light"), url("./fonts/Poppins-Light.woff") format("woff");
+}
+
+.body {
+  overflow-y: scroll;
 }
 
 .section {
@@ -29,30 +38,33 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  background: rgb(255,255,255);
+  /* background: rgb(255, 255, 255); */
+  background-color: rgba(0, 0, 0, 0.489)
 }
 
 .home {
   min-height: 100vh;
   /* background-color: black; */
-  
-  background-color: #4C5994;
+  /* background-color: #4C5994; */
+  /* background: url("images/DicePic.png") center center/cover no-repeat; */
+  /* background-color: rgba(0, 0, 0, 0.3); */
+}
 
-
-  /* background: url('images/ProgressPathTransparent.png') center center/cover no-repeat; */
+.about {
+  background-color: white;
+  /* background-color: black; */
+  /* background-color: #ff7474; */
 }
 
 .design-process {
   /* background-color: black; */
-  background-color: #4C5994;
-  /* background: url('images/ProgressPath.png') center center/cover no-repeat; */
+  /* background-color: #4c5994; */
 }
 
 .demo {
-  background-color: #FF7474;
+  background-color: #ff7474;
   /* background: url('images/ProgressPath.png') center center/cover no-repeat; */
 }
-
 
 .footer {
   min-height: 20vh;
