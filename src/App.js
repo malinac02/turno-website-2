@@ -78,7 +78,7 @@ function App() {
         </article>
         <article id="team" className="section">
           {/* <Team /> */}
-          <Team2 />
+          <Team />
         </article>
         <footer className="footer">
           <p className="footer-text">&copy; 2024 Turno. All rights reserved.</p>

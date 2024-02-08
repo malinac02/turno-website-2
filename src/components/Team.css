@@ -12,6 +12,7 @@ h1 {
 
 .team-title {
   margin-top: -10px;
+  color: white;
 }
 
 .team-row {
@@ -109,14 +110,13 @@ h1 {
 
 .teammate-name {
   margin: 5px 0;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .teammate-role {
   color: #555;
   margin: 0;
-  font-family: "Light";
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .linkedin {

@@ -52,19 +52,19 @@ function DesignProcess2() {
       "slides pptx": Presentation2PPTX,
     },
     {
-      title: "Concept Video",
+      title: "Hi-fi Prototype V2",
       // "slides pdf": A4pdf,
       // "slides pptx": A4ppt,
       // youtube: "https://youtu.be/UodGwjzAHGI?si=aYD30W_8lNBmDW0v",
       // "save video": ConceptVideo,
     },
     {
-      title: "Lo-Fidelity Prototype",
+      title: "Field Usability Test",
       // "slides pdf": A5pdf,
       // "slides pptx": A5ppt,
     },
     {
-      title: "Medium-Fidelity Prototype",
+      title: "Hi-Fi Prototype V3",
       // "slides pdf": A6pdf,
       // "slides pptx": A6ppt,
       // figma:
@@ -72,30 +72,16 @@ function DesignProcess2() {
       // readme: A6readme,
     },
     {
-      title: "High-Fidelity Prototype",
+      title: "Hi-Fi Video Prototype",
       // "slides pdf": A8pdf,
       // "slides pptx": A8ppt,
       // "hi-fi": null,
       // readme: A8readme,
     },
     {
-      title: "Heuristic Evaluation Synthesis",
+      title: "Final Project Poster, Presentation, & Report",
       // "HE pdf": A9HEpdf,
       // "HE docx": A9HEdocx,
-    },
-    {
-      title: "Poster, Pitch, & Demo Video",
-      // "poster pdf": A10posterpdf,
-      // "poster pptx": A10posterppt,
-      // "pitch pdf": A10pitchpdf,
-      // "pitch pptx": A10pitchppt,
-      // demo: "https://www.youtube.com/watch?v=UQ6yqcV6l7c&t=8s",
-      // "save video": TurnoDemo,
-    },
-    {
-      title: "Final Report",
-      // pdf: A10reportpdf,
-      // docx: null,
     },
   ];
 
@@ -140,8 +126,8 @@ function DesignProcess2() {
       <div className="process-header">
         <p className="process-description">
           CS 194H: Over the next ten weeks and with a new team, we iterated on
-          the <b>turno</b> app, making key conceptual and design changes to arrive 
-          at our final product.
+          the <b>turno</b> app, making key conceptual and design changes to
+          arrive at our final product.
         </p>
       </div>
 
