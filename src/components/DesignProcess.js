@@ -80,8 +80,7 @@ function DesignProcess() {
       "slides pdf": A8pdf,
       "slides pptx": A8ppt,
       // subtitle2: "Hi-Fi:",
-      "hi-fi": null,
-      readme: A8readme,
+      "readme + prototype": A8readme,
     },
     {
       title: "Heuristic Evaluation Synthesis",
@@ -137,6 +136,8 @@ function DesignProcess() {
         return <FaFileWord className="process-icon" />;
       case "readme":
         return <FaFileLines className="process-icon" />;
+      case "readme + prototype":
+        return <FaFileLines className="process-icon" />;
       case "script":
       case "poster":
         return <FaFileImage className="process-icon" />;
@@ -148,11 +149,11 @@ function DesignProcess() {
   return (
     <div className="process-container">
       <div className="process-header">
-        <h2 className="process-title">Our Process</h2>
+        <h2 className="process-title">Design Process</h2>
         <p className="process-description">
           CS 147: Over the first ten weeks, we searched for problems,
           brainstormed solutions, built and tested prototypes, and ultimately
-          created our first version of the <b>turno</b> app.
+          created our first version of turno.
         </p>
       </div>
 

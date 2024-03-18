@@ -7,11 +7,52 @@
 
 h1 {
   font-size: 36px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .team-title {
   margin-top: -10px;
+  color: white;
+}
+
+.team-toggle {
+  background-color: white;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 40px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  margin-top: -20px;
+}
+
+.team-toggle-box {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-toggle-box-active {
+  background-color: #ff7474;
+  border-radius: 100px;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-toggle-text {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.team-toggle-text-active {
+  cursor: none;
+  font-size: 18px;
   color: white;
 }
 
@@ -29,12 +70,15 @@ h1 {
   border-color: #ff7474;
   border-width: 3px;
   padding: 20px;
-  border-radius: 20px;
-  flex: 1;
-  min-width: 200px;
-  margin-bottom: -10px;
-}
+  border-radius: 18px;
 
+  flex: 0;
+  /* min-width: 200px; */
+  width: 240px;
+  margin-bottom: -10px;
+  background-color: #fff0f0;
+  border: 2px solid #ff7474;
+}
 
 @media screen and (max-width: 1050px) {
   .team-row {
@@ -81,14 +125,18 @@ h1 {
   }
 }
 
-
 .profile-image-container {
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 200px;
   flex-shrink: 0;
   overflow: hidden;
-  border-radius: 50%;
-  margin-bottom: 10px;
+  border-radius: 18px;
+  margin-top: -10px;
+  /* margin-bottom: 10px; */
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .profile-image {
@@ -102,15 +150,16 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
+  /* background-color: white; */
   padding: 10px;
   border-radius: 20px;
-  width: 100%;
+  width: 200px;
+  height: 130px;
 }
 
 .teammate-name {
-  margin: 5px 0;
-  font-size: 18px;
+  margin: 5px 0 10px 0;
+  font-size: 22px;
 }
 
 .teammate-role {
@@ -120,6 +169,7 @@ h1 {
 }
 
 .linkedin {
+  margin-top: 10px;
   display: flex;
   align-items: center;
   gap: 3px;

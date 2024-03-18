@@ -12,14 +12,14 @@
 }
 
 .process-title {
-  color: white;
+  color: black;
   font-size: 40px;
   margin-top: 15px;
-  margin-bottom: -10px;
+  margin-bottom: 20px;
 }
 
 .process-description {
-  color: white;
+  color: black;
   font-size: 16px;
   font-family: "Light";
   max-width: 700px;
@@ -51,13 +51,17 @@
 
 .process-box {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
 
 .process-links-container {
-  background-color: rgb(44, 56, 103);
+  /* background-color: rgb(44, 56, 103); */
+
+  border: 2px solid #ff7474;
+  background-color: #fff0f0;
+
   border-radius: 22px;
   min-width: 300px;
   width: 100%;
@@ -76,18 +80,18 @@
 }
 
 .process-box h3 {
-  color: white;
+  color: black;
   font-size: 17px;
   margin-bottom: 0px;
 }
 
 .process-box p {
-  color: white;
+  color: black;
   font-size: 14px;
 }
 
 .process-box a {
-  color: white;
+  color: black;
   font-size: 14px;
 }
 
@@ -108,39 +112,46 @@
 }
 
 .process-icon-link:hover {
-  text-decoration: underline;
-  color: white;
+  /* text-decoration: underline; */
+  /* color: white; */
+  color: black;
 }
 
 .process-icon-link:hover p {
-  font-family: "Bold";
-  color: white;
+  /* font-family: "Bold"; */
+  /* color: white; */
+  color: black;
 }
 
 .process-icon-link:hover .process-icon {
-  color: white;
+  /* color: white; */
+  color: black;
 }
 
 .process-icon-link:hover .process-icon-pdf {
-  color: white;
+  /* color: white; */
+  color: black;
 }
 
 .process-icon-link p {
   margin-top: 5px;
   margin-bottom: 2px;
   font-size: 12px;
+  /* color: black; */
   color: #ff7474;
-  line-height: 1.1;
+  line-height: 0.9;
   width: 80%;
 }
 
 .process-icon {
   font-size: 35px;
+  /* color: black; */
   color: #ff7474;
 }
 
 .process-icon-pdf {
   font-size: 35px;
   color: #ff7474;
+  /* color: black; */
   margin-left: 8px;
 }

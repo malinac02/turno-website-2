@@ -1,5 +1,13 @@
+.demo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 80vh;
+  gap: 35px;
+}
+
 .demo-title {
-  font-size: 28px;
+  font-size: 34px;
   color: white !important;
 }
 
@@ -9,4 +17,11 @@
   font-size: 17px;
   max-width: 850px;
   color: white !important;
+}
+
+.demo-videos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 300px;
 }

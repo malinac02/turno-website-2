@@ -8,7 +8,7 @@
 }
 
 .home-content {
-  width: 85%;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: space-between !important;
@@ -18,11 +18,13 @@
   /* flex: 1; */
   text-align: left;
   min-width: 400px;
+  /* padding-left: 80px; */
 }
 
 .home-title-dice {
   display: flex;
   align-items: center;
+  z-index: 1;
   /* overflow: hidden; */
 }
 
@@ -76,6 +78,7 @@
 .home-button-primary {
   height: 30px;
   width: 120px;
+  text-decoration: none;
 
   background-color: white;
   color: black;
@@ -141,7 +144,7 @@
 }
 
 .iphone-image {
-  height: 80vh;
+  height: 70vh;
   object-fit: cover;
-  margin-top: 100px;
+  margin-top: 50px;
 }

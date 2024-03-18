@@ -10,92 +10,86 @@ import {
   FaFileImage,
   FaFileArrowDown,
   FaFileLines,
+  FaMobileScreenButton,
 } from "react-icons/fa6";
-import Presentation1PDF from "../pdfs/194H/Presentation1.pdf";
-import Presentation1PPTX from "../pdfs/194H/Presentation1.pptx";
-import Presentation2PDF from "../pdfs/194H/Presentation2.pdf";
-import Presentation2PPTX from "../pdfs/194H/Presentation2.pptx";
-// import A1pdf from "../pdfs/147/TurnoA1Slides.pdf";
-// import A1ppt from "../pdfs/147/TurnoA1Slides.pptx";
-// import A2pdf from "../pdfs/147/TurnoA2Slides.pdf";
-// import A2ppt from "../pdfs/147/TurnoA1Slides.pptx";
-// import A4pdf from "../pdfs/147/TurnoA4Slides.pdf";
-// import A4ppt from "../pdfs/147/TurnoA4Slides.pptx";
-// import A5pdf from "../pdfs/147/TurnoA5Slides.pdf";
-// import A5ppt from "../pdfs/147/TurnoA5Slides.pptx";
-// import A6pdf from "../pdfs/147/TurnoA6Slides.pdf";
-// import A6ppt from "../pdfs/147/TurnoA6Slides.pptx";
-// import A6readme from "../pdfs/147/TurnoA6ReadMe.pdf";
-// import A8pdf from "../pdfs/147/TurnoA8Slides.pdf";
-// import A8ppt from "../pdfs/147/TurnoA8Slides.pptx";
-// import A8readme from "../pdfs/147/TurnoA8ReadMe.pdf";
-// import A10pitchpdf from "../pdfs/147/TurnoA10PitchSlide.pdf";
-// import A10pitchppt from "../pdfs/147/TurnoA10PitchSlide.pptx";
-// import A10posterpdf from "../pdfs/147/TurnoA10Poster.pdf";
-// import A10posterppt from "../pdfs/147/TurnoA10Poster.pptx";
-// import A10reportpdf from "../pdfs/147/TurnoA10Report.pdf";
-// import A9HEpdf from "../pdfs/147/TurnoHE.pdf";
-// import A9HEdocx from "../pdfs/147/TurnoHE.docx";
-// import ConceptVideo from "../videos/TurnoConceptVideo.mp4";
-// import TurnoDemo from "../videos/TurnoDemo.mp4";
+import ProjectRecap from "../pdfs/194H/Presentation1.pdf";
+import LabUsabilityStudy from "../pdfs/194H/Presentation2.pdf";
+import PrototypeV2 from "../pdfs/194H/Presentation3.pdf";
+import ReadMeV2 from "../pdfs/194H/ReadMeV2.pdf";
+import FieldUsabilityTest from "../pdfs/194H/Presentation4.pdf";
+import PrototypeV3 from "../pdfs/194H/Presentation5.pdf";
+import ReadMeV3 from "../pdfs/194H/ReadMeV3.pdf";
+import PrototypeVideo from "../videos/TurnoPrototypeVideo.mp4";
+import FinalPresentation from "../pdfs/194H/Presentation6.pdf";
+import FinalReport from "../pdfs/194H/FinalReport.pdf";
+import PosterPDF from "../pdfs/194H/Poster.pdf";
 
 function DesignProcess2() {
   const items = [
     {
       title: "Project Recap",
-      "slides pdf": Presentation1PDF,
-      "slides pptx": Presentation1PPTX,
+      "slides (pdf)": ProjectRecap,
+      "slides (canva)":
+        "https://www.canva.com/design/DAF50YR54UE/Y7szi_pW5wcZJhIGgCNo8w/view?utm_content=DAF50YR54UE&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel",
     },
     {
       title: "Lab Usability Study",
-      "slides pdf": Presentation2PDF,
-      "slides pptx": Presentation2PPTX,
+      "slides (pdf)": LabUsabilityStudy,
+      "slides (canva)":
+        "https://www.canva.com/design/DAF7BGPUGkk/hCZ_kEoBV-ZWS7oEuejaRA/view?utm_content=DAF7BGPUGkk&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel",
     },
     {
       title: "Hi-fi Prototype V2",
-      // "slides pdf": A4pdf,
-      // "slides pptx": A4ppt,
-      // youtube: "https://youtu.be/UodGwjzAHGI?si=aYD30W_8lNBmDW0v",
-      // "save video": ConceptVideo,
+      "slides (pdf)": PrototypeV2,
+      "slides (canva)":
+        "https://www.canva.com/design/DAF8Uk8S7eM/rRFVV-sJCqn00GZspF1cGw/view?utm_content=DAF8Uk8S7eM&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel",
+      "readme + prototype": ReadMeV2,
     },
     {
       title: "Field Usability Test",
-      // "slides pdf": A5pdf,
-      // "slides pptx": A5ppt,
+      "slides (pdf)": FieldUsabilityTest,
+      "slides (canva)":
+        "https://www.canva.com/design/DAF9Yozh5hU/9aw0qMQmJsTdclFS8zWzUA/view?utm_content=DAF9Yozh5hU&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel",
     },
     {
-      title: "Hi-Fi Prototype V3",
-      // "slides pdf": A6pdf,
-      // "slides pptx": A6ppt,
-      // figma:
-      //   "https://www.figma.com/file/RDkSKAbDRIfpmg8ZrJzkEM/A6-Turno-Med-Fi-Prototype?type=design&node-id=1-451&mode=design&t=aLDPeAQr758KHLLV-0",
-      // readme: A6readme,
+      title: "Hi-Fi Prototype V3 (Final)",
+      "slides (pdf)": PrototypeV3,
+      "slides (canva)":
+        "https://www.canva.com/design/DAF-mF1pYeQ/NomnEmUsY4MziwatMNh-Vg/view?utm_content=DAF-mF1pYeQ&utm_campaign=designshare&utm_medium=link&utm_source=editor",
+      "readme + prototype": ReadMeV3,
     },
     {
       title: "Hi-Fi Video Prototype",
-      // "slides pdf": A8pdf,
-      // "slides pptx": A8ppt,
-      // "hi-fi": null,
-      // readme: A8readme,
+      youtube: "https://youtu.be/WP6tEXwbzp8",
+      "save video": PrototypeVideo,
     },
     {
-      title: "Final Project Poster, Presentation, & Report",
-      // "HE pdf": A9HEpdf,
-      // "HE docx": A9HEdocx,
+      title: "Final Poster & Presentation",
+      "poster (pdf)": PosterPDF,
+      "slides (pdf)": FinalPresentation,
+      "slides (canva)":
+        "https://www.canva.com/design/DAF_IzC6fGg/oL9Eng8sBaLFP3Q67hprCQ/view?utm_content=DAF_IzC6fGg&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel",
+    },
+    {
+      title: "Final Report",
+      "report (pdf)": FinalReport,
+      "report (canva)": "https://www.canva.com/design/DAF8jtTx6fE/d3QDQ08gmZ0vdkhOP5JQeg/view?utm_content=DAF8jtTx6fE&utm_campaign=designshare&utm_medium=link&utm_source=editor",
     },
   ];
 
   const getIcon = (type) => {
     switch (type) {
       case "pdf":
-      case "slides pdf":
-      case "poster pdf":
-      case "pitch pdf":
-      case "HE pdf":
+      case "report (pdf)":
+      case "slides (pdf)":
+      case "poster (pdf)":
+      case "pitch (pdf)":
+      case "HE (pdf)":
         return <FaFilePdf className="process-icon-pdf" />;
-      case "slides pptx":
-      case "poster pptx":
-      case "pitch pptx":
+      case "slides (pptx)":
+      case "poster (pptx)":
+      case "pitch (pptx)":
+      case "slides (canva)":
         return <FaFilePowerpoint className="process-icon" />;
       case "youtube":
       case "demo":
@@ -109,10 +103,11 @@ function DesignProcess2() {
       case "poster":
         return <FaFileImage className="process-icon" />;
       case "docx":
-      case "HE docx":
+      case "report (canva)":
+      case "HE (docx)":
         return <FaFileWord className="process-icon" />;
-      case "readme":
-        return <FaFileLines className="process-icon" />;
+      case "readme + prototype":
+        return <FaMobileScreenButton className="process-icon" />;
       case "script":
       case "poster":
         return <FaFileImage className="process-icon" />;
@@ -126,7 +121,7 @@ function DesignProcess2() {
       <div className="process-header">
         <p className="process-description">
           CS 194H: Over the next ten weeks and with a new team, we iterated on
-          the <b>turno</b> app, making key conceptual and design changes to
+          the turno app, making key conceptual and design changes to
           arrive at our final product.
         </p>
       </div>
@@ -143,11 +138,11 @@ function DesignProcess2() {
                     .slice(1)
                     .map(
                       (link, index2) =>
-                        ((link === "slides pptx" ||
-                          link === "poster pptx" ||
-                          link === "pitch pptx" ||
+                        ((link === "slides (pptx)" ||
+                          link === "poster (pptx)" ||
+                          link === "pitch (pptx)" ||
                           link === "docx" ||
-                          link === "HE docx") && (
+                          link === "HE (docx)") && (
                           <a
                             key={index2}
                             className="process-icon-link"
@@ -162,7 +157,7 @@ function DesignProcess2() {
                           <a
                             key={index2}
                             className="process-icon-link"
-                            // href={ConceptVideo}
+                            href={PrototypeVideo}
                             alt={link}
                             download
                           >

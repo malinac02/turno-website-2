@@ -3,6 +3,7 @@ import CasinoIcon from "@mui/icons-material/Casino";
 import Turno3Screens from "../images/Turno3Screens.png";
 import { Link } from "react-scroll";
 import { FaArrowDown, FaArrowRight } from "react-icons/fa6";
+import ReadMeV3 from "../pdfs/194H/ReadMeV3.pdf";
 
 function Home() {
   return (
@@ -13,19 +14,19 @@ function Home() {
             <h1 className="home-title">turno</h1>
             <CasinoIcon className="home-dice" fontSize="default" />
           </div>
-          <h4 className="home-subtitle">Roll your way through the day</h4>
+          <h4 className="home-subtitle">
+            Get rolling on making daily decisions
+          </h4>
           <div className="home-button-container">
-            <Link
+            <a
               className="home-button-primary"
-              // to="about"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
+              href={ReadMeV3}
+              alt={"turno README"}
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Get the app
-              {/* <FaArrowDown className="home-button-icon" /> */}
-            </Link>
+              Try the app
+            </a>
             <Link
               className="home-button-secondary"
               to="about"
@@ -35,7 +36,6 @@ function Home() {
               duration={500}
             >
               Learn more
-              {/* <FaArrowRight className="home-button-icon" /> */}
             </Link>
           </div>
         </div>

@@ -21,11 +21,11 @@ function App() {
       const scrollPosition = window.scrollY;
 
       const aboutOffset = document.getElementById("about").offsetTop - 45;
+      const demoOffset = document.getElementById("demo").offsetTop - 45;
       const designProcessOffset =
         document.getElementById("design-process").offsetTop - 45;
       const designProcess2Offset =
         document.getElementById("design-process-2").offsetTop - 45;
-      const demoOffset = document.getElementById("demo").offsetTop - 45;
       const teamOffset = document.getElementById("team").offsetTop - 45;
 
       const homeMidpoint = document.getElementById("home").offsetTop + 50;
@@ -34,14 +34,14 @@ function App() {
         setCurrentSection("home-top");
       } else if (scrollPosition < aboutOffset) {
         setCurrentSection("home");
-      } else if (scrollPosition < designProcessOffset) {
+      } else if (scrollPosition < demoOffset) {
         setCurrentSection("about");
+      } else if (scrollPosition < designProcessOffset) {
+        setCurrentSection("demo");
       } else if (scrollPosition < designProcess2Offset) {
         setCurrentSection("design-process");
-      } else if (scrollPosition < demoOffset) {
-        setCurrentSection("design-process-2");
       } else if (scrollPosition < teamOffset) {
-        setCurrentSection("demo");
+        setCurrentSection("design-process-2");
       } else {
         setCurrentSection("team");
       }
@@ -67,21 +67,21 @@ function App() {
         <article id="about" className="section about">
           <About />
         </article>
+        <article id="demo" className="section demo">
+          <Demo />
+        </article>
         <article id="design-process" className="section design-process">
           <DesignProcess />
         </article>
         <article id="design-process-2" className="section design-process-2">
           <DesignProcess2 />
         </article>
-        <article id="demo" className="section demo">
-          <Demo />
-        </article>
-        <article id="team" className="section">
+        <article id="team" className="section team">
           {/* <Team /> */}
           <Team />
         </article>
         <footer className="footer">
-          <p className="footer-text">&copy; 2024 Turno. All rights reserved.</p>
+          <p className="footer-text">&copy; 2024 turno. All rights reserved.</p>
         </footer>
       </main>
       {/* </div> */}

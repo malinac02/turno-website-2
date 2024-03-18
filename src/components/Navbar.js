@@ -12,14 +12,11 @@ function Navbar({ currentSection }) {
   } else if (currentSection === "home") {
     navbarClass += " white-text-navbar";
     logoClass += " hidden-logo";
-  } else if (
-    currentSection === "design-process" ||
-    currentSection === "design-process-2" ||
-    currentSection === "team"
-  ) {
+  } else if (currentSection === "team") {
     navbarClass += " white-text-navbar";
   } else if (currentSection === "demo") {
-    navbarClass += " salmon-navbar";
+    // navbarClass += " light-salmon-navbar";
+    navbarClass += " white-text-navbar";
   } else {
     navbarClass += " black-text-navbar";
   }
@@ -53,18 +50,6 @@ function Navbar({ currentSection }) {
         <li className="navbar-li">
           <Link
             className="navbar-text"
-            to="design-process"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={500}
-          >
-            Design Process
-          </Link>
-        </li>
-        <li className="navbar-li">
-          <Link
-            className="navbar-text"
             to="demo"
             spy={true}
             smooth={true}
@@ -72,6 +57,18 @@ function Navbar({ currentSection }) {
             duration={500}
           >
             Demo
+          </Link>
+        </li>
+        <li className="navbar-li">
+          <Link
+            className="navbar-text"
+            to="design-process"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            Design Process
           </Link>
         </li>
         <li className="navbar-li">

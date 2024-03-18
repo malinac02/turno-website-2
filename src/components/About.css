@@ -2,23 +2,42 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
-.about-top {
+/* .about-top {
   margin-bottom: 5px;
+} */
+
+.about-subtitle {
+  font-size: 24px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-family: "Bold";
+  color: #ff7474;
 }
 
 .about-title {
   font-size: 28px;
   color: black;
+  margin-bottom: 0px;
+  /* background-color: yellow; */
+}
+
+.about-problem-solution {
+  max-width: 70vw;
+  display: flex;
+  gap: 100px;
+  margin-top: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .about-description {
   align-self: center;
   font-family: "Light";
-  font-size: 17px;
-  max-width: 850px;
+  font-size: 20px;
+  max-width: 500px;
   color: black;
 }
 
@@ -27,21 +46,74 @@
   color: black;
 }
 
-.about-subtitle {
-  font-size: 19px;
-  margin-bottom: 10px;
-  color: black;
-}
-
 .about-video-container {
   background-color: #ff7474;
   border-radius: 20px;
   display: flex;
   justify-content: center;
+  align-items: center;
   /* width: 100%; */
   padding: 5px;
 }
 
 .about-video {
   border-radius: 20px;
+}
+
+.about-key-features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 40px 0;
+  width: 70vw;
+}
+
+.about-line {
+  width: 40%;
+  border: 1px solid #4c5994;
+  margin: 0 10px;
+}
+
+.about-feature-text {
+  margin: 0 10px;
+  white-space: nowrap;
+  font-family: "Medium";
+  color: #ff7474;
+}
+
+.about-dice-section {
+  width: 70vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.about-dice {
+  width: 20vw;
+  max-height: 60vh;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.about-dice p {
+  margin: 0 0 0 0; /* Adjust the bottom margin as needed */
+}
+
+.about-dice-text {
+  margin: 0 10px;
+  white-space: nowrap;
+  font-family: "Bold";
+  color: black;
+}
+
+.about-dice-screen {
+  max-height: 70vh;
+  /* width: 25vh; */
+  object-fit: cover;
 }

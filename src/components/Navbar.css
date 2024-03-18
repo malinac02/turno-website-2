@@ -26,8 +26,8 @@
 .white-text-navbar {
   color: white;
   /* background-color: rgba(0, 0, 0, 0.513); */
-  background-color: #000000;
-  
+  background-color: #343d6a;
+
   /* background: url("../images/DicePic3.png") center top/cover no-repeat; */
 }
 
@@ -39,6 +39,11 @@
 .salmon-navbar {
   color: white;
   background-color: #ff7474;
+}
+
+.light-salmon-navbar {
+  color: black;
+  background-color: #fff0f0;
 }
 
 .navbar-left {
