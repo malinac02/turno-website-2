@@ -53,24 +53,7 @@ function About() {
             className="about-dice-screen"
           />
         </div>
-        {/* Removed the duplicated and improperly opened <div> tags */}
       </div>
-
-      {/* The commented out section seems like it was meant to be included but was not properly opened/closed */}
-      {/* Uncomment and correct as needed */}
-      {/* <h5 className="about-subtitle">Our Concept</h5> */}
-      {/* <div className="about-video-container">
-        <iframe
-          width="550"
-          height="300"
-          src="https://www.youtube.com/embed/v4gpvESwjq4?si=Y6twkmt2yCCPUcJz"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-          className="about-video"
-        ></iframe>
-      </div> */}
     </div>
   );
 }

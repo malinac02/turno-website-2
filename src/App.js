@@ -77,14 +77,12 @@ function App() {
           <DesignProcess2 />
         </article>
         <article id="team" className="section team">
-          {/* <Team /> */}
           <Team />
         </article>
         <footer className="footer">
           <p className="footer-text">&copy; 2024 turno. All rights reserved.</p>
         </footer>
       </main>
-      {/* </div> */}
     </div>
   );
 }
